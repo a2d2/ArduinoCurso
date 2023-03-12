@@ -1,14 +1,54 @@
+import { toures } from '../data';
 function Tours() {
   return (
     <section className="section" id="tours">
       <div className="section-title">
         <h2>
-          featured <span>tours</span>
+          Arduino -<span>Desarollador Web</span>
         </h2>
       </div>
 
       <div className="section-center featured-center">
-        <article className="tour-card">
+        {toures.map((touris) => {
+          const {
+            id,
+            image,
+            date,
+            title,
+            text,
+            location,
+            texto,
+            duration,
+            price,
+          } = touris;
+          return (
+            <article className="tour-card" key={id}>
+              <div className="tour-img-container">
+                <img src={image} className="tour-img" alt="" />
+                <p className="tour-date">{date}</p>
+              </div>
+              <div className="tour-info">
+                <div className="tour-title">
+                  <h4>{title}</h4>
+                </div>
+                <p>{text}</p>
+                <div className="tour-footer">
+                  <p>
+                    <span>
+                      <i className="fas fa-map"></i>
+                    </span>{' '}
+                    <a href={location} target="_blank" rel="noreferrer">
+                      {texto}
+                    </a>
+                  </p>
+                  <p>{duration} </p>
+                  <p>${price}</p>
+                </div>
+              </div>
+            </article>
+          );
+        })}
+        {/* <article className="tour-card">
           <div className="tour-img-container">
             <img src="./images/tour-1.jpeg" className="tour-img" alt="" />
             <p className="tour-date">august 26th, 2020</p>
@@ -34,7 +74,6 @@ function Tours() {
             </div>
           </div>
         </article>
-
         <article className="tour-card">
           <div className="tour-img-container">
             <img src="./images/tour-2.jpeg" className="tour-img" alt="" />
@@ -59,7 +98,6 @@ function Tours() {
             </div>
           </div>
         </article>
-
         <article className="tour-card">
           <div className="tour-img-container">
             <img src="./images/tour-3.jpeg" className="tour-img" alt="" />
@@ -83,9 +121,8 @@ function Tours() {
               <p>from $5000</p>
             </div>
           </div>
-        </article>
-
-        <article className="tour-card">
+        </article> */}
+        {/* <article className="tour-card">
           <div className="tour-img-container">
             <img src="./images/tour-4.jpeg" className="tour-img" alt="" />
             <p className="tour-date">december 5th, 2019</p>
@@ -108,7 +145,7 @@ function Tours() {
               <p>from $3300</p>
             </div>
           </div>
-        </article>
+        </article> */}
       </div>
     </section>
   );

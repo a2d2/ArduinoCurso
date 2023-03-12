@@ -1,34 +1,38 @@
+import aboutImg from '../images/about.png';
 const About = () => {
   return (
     <section className="section" id="about">
       <div className="section-title">
         <h2>
-          about <span>us</span>
+          Acerca <span>de</span>
         </h2>
       </div>
 
       <div className="section-center about-center">
         <div className="about-img">
-          <img
-            src="./images/about.jpeg"
-            className="about-photo"
-            alt="awesome beach"
-          />
+          <img src={aboutImg} className="about-photo" alt="awesome beach" />
         </div>
         <article className="about-info">
-          <h3>explore the difference</h3>
+          <h3>Arduino profesional - Desarrollo Web</h3>
+          <p></p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-            unde dolor?
+            La imagen a la derecha es de una cortadora de canaletas plasticas
+            completamente desarrollada en Arduino. Si tomas el curso gratuito
+            podrias ofrecer este tipo de servicios de desarrollo profesionales.
+            Aprenderas sobre puertos, interrupciones o polling, timers, es decir
+            muchos conceptos a fondo que no vienen en otros cursos. Si le sumas
+            que tambien soy desarrollardor Web comprenderas que no estoy
+            precisamente en tareas sencillas de desarrollo en el dia a dia. Si
+            deseas asesoria para tus proyectos estudiantes o preofesionales no
+            dudes en contactarnos.
           </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-            unde dolor?
-          </p>
-          <a href="#" className="btn">
-            read more
+          <a
+            href="https://www.youtube.com/watch?v=0pFOdfs2c9I&t=44s"
+            target="_blank"
+            rel="noreferrer"
+            className="btn"
+          >
+            Continuar
           </a>
         </article>
       </div>
