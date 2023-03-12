@@ -68,7 +68,7 @@ export const toures = [
     date: 'Desarollo web',
     title: 'Desarrollo Web',
     text: 'Desarrollador web. React, HTML, CSS.',
-    location: 'React',
+    location: 'https://arduino-curso-asesoria.netlify.app/',
     texto: 'Desarrollo Web',
     duration: 'contacta',
     price: 'Variable',
